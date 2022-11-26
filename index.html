@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img\eu-desenho.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MENU PRINCIPAL -->
+    <div class="cabecalho-container">
+        <header>
+            <div class="logo">
+                <a href="https://github.com/davivieira10" target="_blank">Davi</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="selecionar()">Início</a></li>
+                    <li><a href="#sobremim" onclick="selecionar()">Sobre Mim</a></li>
+                    <li><a href="#skills" onclick="selecionar()">Habilidades</a></li>
+                    <li><a href="#curriculo" onclick="selecionar()">Currículo</a></li>
+                    <li><a href="#portfolio" onclick="selecionar()">Portfólio</a></li>
+                    <li><a href="#contato" onclick="selecionar()">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- INÍCIO -->
+    <section id="inicio" class="inicio">
+        <div class="banner">
+            <div class="img">
+                <a href="https://cursos.alura.com.br/emprega-one/profile/davivieiradm" target="_blank"><img src="img/eu.jpg" alt="Minha Foto"></a>
+            </div>
+            <h1>Davi Vieira Gonçalves</h1>
+            <h2>Desenvolvedor Front-end</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/davi-adm/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/davivieira10/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/davi.vieiragoncalves/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://github.com/davivieira10" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section id="sobremim" class="sobremim">
+        <div class="conteudo">
+            <h2>Sobre Mim</h2>
+            <p><span>Olá, sou Davi Vieira Gonçalves.</span> Minha trajetória se inicia com o curso Superior que fiz pelo IBES (Instituto Baiano de Ensino Superior), onde me formei em Administração. Trabalhei em algumas empresas na área administrativa. Meu último trabalho foi como Gerente de Informática pela Prefeitura Municipal de Simões Filho. Estou em transição de carreira para a área da programação e graças ao Programa One (Oracle Next Education), estou tendo essa oportunidade de estudar as tecnologias e quem sabe logo me tornar um Desenvolvedor Web.</p>
+
+            <div class="informacoes">
+                <!-- Dados Pessoais -->
+                <div class="col">
+                    <h3>Dados pessoais</h3>
+                    <ul>
+                        <li>
+                            <strong>Contato</strong>
+                            (71) 99365-0181
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            davivieiradm@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong><a class="link" href="https://cursos.alura.com.br/emprega-one/profile/davivieiradm" target="_blank">https://cursos.alura.com.br/emprega-one/profile/davivieiradm</a>
+                        </li>
+                        <li class="student">
+                            <strong>Estudante</strong>
+                            <span>PROGRAMA ONE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- interesses -->
+                <div class="col">
+                    <h3>Interesses</h3>
+                    <div class="container-interesses">
+                        <div class="interesses">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Jogos</span>
+                        </div>
+                        <div class="interesses">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Músicas</span>
+                        </div>
+                        <div class="interesses">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Viajar</span>
+                        </div>
+                        <div class="interesses">
+                            <i class="fa fa-film" aria-hidden="true"></i>
+                            <span>Filmes</span>
+                        </div>
+                        <div class="interesses">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>Esportes</span>
+                        </div>
+                        <div class="interesses">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Livros</span>
+                        </div>
+                        <div class="interesses">
+                            <i class="fa-solid fa-car"></i>
+                            <span>Carros</span>
+                        </div>
+                        <div class="interesses">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>Fotos</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="https://cursos.alura.com.br/emprega-one/profile/davivieiradm" target="_blank">Download Currículo</a><i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <div class="conteudo">
+            <h2>Habilidades</h2>
+            <div class="informacoes">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progresso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progresso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Profissionais</h3>
+                    <div class="skill">
+                        <span>Comunicação</span>
+                        <div class="barra-skill">
+                            <div class="progresso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabalho em Equipe</span>
+                        <div class="barra-skill">
+                            <div class="progresso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Criatividade</span>
+                        <div class="barra-skill">
+                            <div class="progresso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicação</span>
+                        <div class="barra-skill">
+                            <div class="progresso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Gerenciamento de Projetos</span>
+                        <div class="barra-skill">
+                            <div class="progresso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRÍCULO -->
+    <section id="curriculo" class="curriculo">
+        <div class="conteudo">
+            <h2>Currículo</h2>
+            <div class="informacoes">
+                <div class="col left">
+                    <h3>Estudante de Programação do Programa ONE - Oracle Next Education</h3>
+                    <div class="item esq">
+                        <h4>Uma parceria da Oracle + Alura</h4>
+                        <span class="profissao">Desenvolvedor Web</span>
+                        <span class="situacao">Em andamento</span>
+                        <p>Lógica de programação, HTML, CSS, JavaScript, Java e Empreendedorismo.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                        <button>
+                            <a href="https://cursos.alura.com.br/emprega-one/profile/davivieiradm" target="_blank">Download Currículo</a><i class="fa-solid fa-download"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>        
+    </section>
+
+    <!-- PORTFÓLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="conteudo">
+            <h2>PORTFÓLIO</h2>
+            <div class="galeria">
+                <div class="projeto">
+                    <img class="experience__img" src="img/projeto-encriptador-textos.png" alt="Projeto Encriptador de Textos">
+                    <div class="experience__info">
+                        <h2 class="experience__title">Decodificador de texto criado com HTML, CSS e JavaScript</h2>
+                        <h3 class="experience__text">Challenge Alura Codificador</h3>
+                    </div>
+                    <div class="experience__description">
+                        <!-- Link para demonstração do projeto no Github ou GithubPages -->
+                            <span class="experience__repo"><a href="https://github.com/davivieira10/encriptador" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experience__demo"><a href="https://davivieira10.github.io/encriptador/" target="_blank"><button class="experiencia__botao--demo">Ver Projeto</button></a></span>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img class="experience__img" src="img/projeto-jogo-forca.png" alt="Projeto do Jogo da Forca">
+                    <div class="experience__info">
+                        <h2 class="experience__title">Jogo da Forca criado com HTML, CSS e JavaScript</h2>
+                        <h3 class="experience__text">Challenge Oracle</h3>
+                    </div>
+                    <div class="experience__description">
+                        <!-- Link para demonstração do projeto no Github ou GithubPages -->
+                            <span class="experience__repo"><a href="https://github.com/davivieira10/jogo-forca" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experience__demo"><a href="https://davivieira10.github.io/jogo-forca/" target="_blank"><button class="experiencia__botao--demo">Ver Projeto</button></a></span>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img class="experience__img" src="img/projeto-barbearia-alura.png" alt="Projeto da Barbearia Alura">
+                    <div class="experience__info">
+                        <h2 class="experience__title">Projeto da Barbearia Alura criado com HTML e CSS</h2>
+                        <h3 class="experience__text">Desenvolvido no Curso de HTML e CSS do Programa ONE</h3>
+                    </div>
+                    <div class="experience__description">
+                        <!-- Link para demonstração do projeto no Github ou GithubPages -->
+                            <span class="experience__repo"><a href="https://github.com/davivieira10/site-barbearia-alura" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experience__demo"><a href="https://davivieira10.github.io/site-barbearia-alura/index.html" target="_blank"><button class="experiencia__botao--demo">Ver Projeto</button></a></span>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img class="experience__img" src="" alt="">
+                    <div class="experience__info">
+                        <h2 class="experience__title">Projeto</h2>
+                        <h3 class="experience__text">Em Breve</h3>
+                    </div>
+                    <div class="experience__description">
+                        <!-- Link para demonstração do projeto no Github ou GithubPages -->
+                            <span class="experience__repo"><a href="#" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experience__demo"><a href="#" target="_blank"><button class="experiencia__botao--demo">Ver Projeto</button></a></span>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img class="experience__img" src="" alt="">
+                    <div class="experience__info">
+                        <h2 class="experience__title">Projeto</h2>
+                        <h3 class="experience__text">Em Breve</h3>
+                    </div>
+                    <div class="experience__description">
+                        <!-- Link para demonstração do projeto no Github ou GithubPages -->
+                            <span class="experience__repo"><a href="#" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experience__demo"><a href="#" target="_blank"><button class="experiencia__botao--demo">Ver Projeto</button></a></span>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img class="experience__img" src="" alt="">
+                    <div class="experience__info">
+                        <h2 class="experience__title">Projeto</h2>
+                        <h3 class="experience__text">Em Breve</h3>
+                    </div>
+                    <div class="experience__description">
+                        <!-- Link para demonstração do projeto no Github ou GithubPages -->
+                            <span class="experience__repo"><a href="#" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experience__demo"><a href="#" target="_blank"><button class="experiencia__botao--demo">Ver Projeto</button></a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contato">
+        <div class="conteudo">
+            <h2>CONTATO</h2>
+            <div class="informacoes">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Seu Nome">
+                    <input type="text" placeholder="Número de telefone">
+                    <input type="text" placeholder="Endereço de Email">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                    <button>
+                        Enviar Mensagem<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <h2>MAPA</h2>
+                    <img src="img/salvador.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="seta">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/davi-adm/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/davivieira10/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/davi.vieiragoncalves/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://github.com/davivieira10" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+    <section class="footer">
+        <div class="footer__rodape">
+            <p>&COPY;Desenvolvido por Davi Vieira Gonçalves</p>
+            <p>2022</p>
+        </div>
+    </section>
+</div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
