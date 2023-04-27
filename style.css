@@ -490,12 +490,6 @@ html {
     display: block;
 }
 
-.curriculo .informacoes .item .situacao {
-    display: block;
-    color: #1CB698;
-    margin-bottom: 10px;
-}
-
 .curriculo .informacoes .item p {
     line-height: 24px;
 }
@@ -508,16 +502,6 @@ html {
 .curriculo .informacoes .dir {
     border-left: 2px solid #1CB698;
     margin-left: 20px;
-}
-
-.curriculo .informacoes .item .conectori {
-    height: 2px;
-    background-color: #1CB698;
-    width: 47px;
-    position: absolute;
-    top: 50%;
-    right: -47px;
-    z-index: 5;
 }
 
 .curriculo button {
